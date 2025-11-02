@@ -177,7 +177,7 @@ cd FRONTEND/frontend && npm test
 ### Tools Used
 - **ChatGPT** - Idea generation, feature planning, and architecture decisions
 - **Kiro AI Assistant** - Code generation, debugging, project structure
-- **GitHub Copilot** - Autocomplete and function implementations
+
 
 ### Impact on Workflow
 AI tools accelerated development by ~40%, particularly for:
