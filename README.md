@@ -1,319 +1,213 @@
-# 🍬 Sweet Shop Management System
+# 🍬 Sweet Shop - E-commerce Platform
 
-A full-stack MERN application for managing a sweet shop inventory with user authentication, role-based access control, and real-time inventory management.
+<div align="center">
 
-## 📋 Project Overview
+![Sweet Shop Logo](https://img.shields.io/badge/Sweet%20Shop-E--commerce-ff69b4?style=for-the-badge&logo=shopify&logoColor=white)
 
-This Sweet Shop Management System allows users to browse and purchase sweets, while administrators can manage the inventory by adding, updating, and deleting products. The application features JWT-based authentication, search and filter capabilities, and a responsive design.
+[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.0-47A248?style=flat&logo=mongodb&logoColor=white)](https://mongodb.com/)
+[![Express.js](https://img.shields.io/badge/Express.js-4.18-000000?style=flat&logo=express&logoColor=white)](https://expressjs.com/)
+
+**A modern full-stack e-commerce platform for sweet shops with real-time notifications, order tracking, and admin dashboard.**
+
+**Developed by: Divej Ahuja**
+
+</div>
+
+## 📸 Application Screenshots
+
+### 🏠 Homepage & Product Catalog
+![Homepage](./screenshots/homepage.png)
+*Browse through our extensive collection of sweets with search and filter options*
+
+### 🛒 Shopping Cart & Checkout
+![Shopping Cart](./screenshots/cart.png)
+*Seamless shopping experience with real-time cart updates*
+
+### 👨‍💼 Admin Dashboard
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+*Comprehensive admin panel for managing products, orders, and analytics*
+
+### 📱 Mobile Responsive Design
+![Mobile View](./screenshots/mobile-view.png)
+*Fully responsive design that works perfectly on all devices*
+
+### 📊 Order Management
+![Order Management](./screenshots/order-management.png)
+*Track and manage orders with real-time status updates*
+
+## 🌟 Key Features
+
+### 🛍️ For Customers
+- **User Authentication** - Secure login/register system
+- **Product Catalog** - Browse sweets with search and filters
+- **Shopping Cart** - Real-time cart with price calculation
+- **Order Tracking** - Track delivery status in real-time
+- **Reviews & Ratings** - Rate and review products
+- **Responsive Design** - Works on all devices
+
+### 👨‍💼 For Admins
+- **Dashboard Analytics** - Sales overview and metrics
+- **Inventory Management** - Add, edit, delete products
+- **Order Management** - Process and track orders
+- **Coupon System** - Create discount codes
+- **Low Stock Alerts** - Automated inventory notifications
+- **User Management** - Manage customer accounts
 
 ## 🛠️ Tech Stack
 
-### Backend
-- **Node.js** with **Express.js** - RESTful API server
-- **MongoDB** with **Mongoose** - Database and ODM
-- **JWT** - Token-based authentication
-- **bcryptjs** - Password hashing
-- **Jest** & **Supertest** - Testing framework
-
-### Frontend
-- **React 18** - UI library
-- **Vite** - Build tool and dev server
-- **React Router** - Client-side routing
-- **Axios** - HTTP client
-- **Tailwind CSS** - Styling
-
-## ✨ Features
-
-### User Features
-- User registration and login
-- Browse all available sweets
-- Search sweets by name
-- Filter sweets by category
-- Purchase sweets (decreases inventory)
-- View real-time stock availability
-
-### Admin Features
-- All user features
-- Add new sweets to inventory
-- Update sweet details (name, price, category, quantity, etc.)
-- Delete sweets from inventory
-- Restock sweets (increase quantity)
-- Full CRUD operations on sweets
-
-### Technical Features
-- JWT-based authentication
-- Role-based access control (User/Admin)
-- Protected API routes
-- Responsive design
-- Real-time inventory updates
-- Input validation
-- Error handling
+**Frontend:** React 18, Vite, Tailwind CSS, React Router, Axios  
+**Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT  
+**Testing:** Jest, ESLint  
+**Deployment:** Vercel, MongoDB Atlas
 
 ## 📁 Project Structure
 
 ```
-.
-├── BACKEND/
+sweet-shop/
+├── BACKEND/                    # Node.js Express API
 │   ├── src/
-│   │   ├── config/
-│   │   │   └── database.js          # MongoDB connection
-│   │   ├── controllers/
-│   │   │   ├── authController.js    # Authentication logic
-│   │   │   └── sweetController.js   # Sweet CRUD operations
-│   │   ├── middleware/
-│   │   │   └── authMiddleware.js    # JWT verification & role check
-│   │   ├── models/
-│   │   │   ├── User.js              # User schema
-│   │   │   └── Sweet.js             # Sweet schema
-│   │   ├── routes/
-│   │   │   ├── authRoutes.js        # Auth endpoints
-│   │   │   └── sweetRoutes.js       # Sweet endpoints
-│   │   ├── tests/                   # Test files
-│   │   └── server.js                # Express app entry point
-│   ├── .env                         # Environment variables
+│   │   ├── controllers/        # Business logic
+│   │   ├── models/            # MongoDB schemas
+│   │   ├── routes/            # API endpoints
+│   │   └── middleware/        # Auth & validation
+│   └── server.js              # Entry point
+│
+├── FRONTEND/frontend/          # React Application
+│   ├── src/
+│   │   ├── components/        # UI components
+│   │   ├── pages/            # Page components
+│   │   ├── context/          # State management
+│   │   └── utils/            # Helper functions
 │   └── package.json
 │
-└── FRONTEND/
-    └── frontend/
-        ├── src/
-        │   ├── components/
-        │   │   ├── SweetCard.jsx           # Sweet display card
-        │   │   ├── AddSweetModal.jsx       # Add sweet form
-        │   │   └── EditSweetModal.jsx      # Edit sweet form
-        │   ├── context/
-        │   │   └── AuthContext.jsx         # Auth state management
-        │   ├── pages/
-        │   │   ├── Login.jsx               # Login page
-        │   │   ├── Register.jsx            # Registration page
-        │   │   └── Dashboard.jsx           # Main dashboard
-        │   ├── services/
-        │   │   └── api.js                  # Axios instance
-        │   ├── App.jsx                     # Main app component
-        │   ├── main.jsx                    # React entry point
-        │   └── index.css                   # Global styles
-        ├── index.html
-        ├── vite.config.js
-        ├── tailwind.config.js
-        └── package.json
+└── Documentation/             # Project docs
 ```
 
-## 🚀 Setup Instructions
+## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js (v16 or higher)
+- Node.js (v18+)
 - MongoDB (local or Atlas)
-- npm or yarn
+- Git
 
-### Backend Setup
+### Installation
 
-1. Navigate to the backend directory:
-```bash
-cd BACKEND
-```
+1. **Clone & Install**
+   ```bash
+   git clone https://github.com/yourusername/sweet-shop.git
+   cd sweet-shop
+   
+   # Backend setup
+   cd BACKEND && npm install
+   
+   # Frontend setup
+   cd ../FRONTEND/frontend && npm install
+   ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+2. **Environment Setup**
+   
+   **Backend `.env`:**
+   ```env
+   MONGODB_URI=mongodb://localhost:27017/sweetshop
+   JWT_SECRET=your_secret_key_here
+   FRONTEND_URL=http://localhost:5173
+   ```
+   
+   **Frontend `.env`:**
+   ```env
+   VITE_API_URL=http://localhost:5000/api
+   ```
 
-3. Configure environment variables in `.env`:
-```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/sweetshop
-JWT_SECRET=your_super_secret_jwt_key_change_this_in_production_12345
-NODE_ENV=development
-```
+3. **Run Application**
+   ```bash
+   # Terminal 1 - Backend
+   cd BACKEND && npm run dev
+   
+   # Terminal 2 - Frontend  
+   cd FRONTEND/frontend && npm run dev
+   ```
 
-4. Start MongoDB (if running locally):
-```bash
-mongod
-```
+4. **Seed Database**
+   ```bash
+   cd BACKEND && npm run seed
+   ```
 
-5. Start the backend server:
-```bash
-# Development mode with auto-reload
-npm run dev
+### 🌐 Access
+- **Frontend**: http://localhost:5173
+- **Backend API**: http://localhost:5000/api
 
-# Production mode
-npm start
-```
-
-The backend will run on `http://localhost:5000`
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-```bash
-cd FRONTEND/frontend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-The frontend will run on `http://localhost:3000`
-
-### Running Both Servers
-
-You can run both servers simultaneously in separate terminal windows:
-
-**Terminal 1 (Backend):**
-```bash
-cd BACKEND
-npm run dev
-```
-
-**Terminal 2 (Frontend):**
-```bash
-cd FRONTEND/frontend
-npm run dev
-```
-
-## 🧪 Testing
-
-### Backend Tests
-
-```bash
-cd BACKEND
-npm test
-```
+### 👤 Test Credentials
+- **Admin**: admin@sweetshop.com / admin123
+- **User**: user@sweetshop.com / user123
 
 ## 📡 API Endpoints
 
 ### Authentication
-- `POST /api/auth/register` - Register new user
+- `POST /api/auth/register` - Register user
 - `POST /api/auth/login` - Login user
-- `GET /api/auth/me` - Get current user (Protected)
+- `GET /api/auth/me` - Get current user
 
-### Sweets (All Protected)
-- `GET /api/sweets` - Get all sweets
-- `GET /api/sweets/search` - Search sweets (query params: name, category, minPrice, maxPrice)
-- `POST /api/sweets` - Create sweet (Admin only)
-- `PUT /api/sweets/:id` - Update sweet (Admin only)
-- `DELETE /api/sweets/:id` - Delete sweet (Admin only)
-- `POST /api/sweets/:id/purchase` - Purchase sweet (decreases quantity)
-- `POST /api/sweets/:id/restock` - Restock sweet (Admin only)
+### Products
+- `GET /api/sweets` - Get all products
+- `POST /api/sweets` - Create product (Admin)
+- `PUT /api/sweets/:id` - Update product (Admin)
+- `DELETE /api/sweets/:id` - Delete product (Admin)
 
-### Request Examples
-
-**Register:**
-```json
-POST /api/auth/register
-{
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123",
-  "role": "user"
-}
-```
-
-**Login:**
-```json
-POST /api/auth/login
-{
-  "email": "john@example.com",
-  "password": "password123"
-}
-```
-
-**Create Sweet (Admin):**
-```json
-POST /api/sweets
-Headers: { "Authorization": "Bearer <token>" }
-{
-  "name": "Chocolate Bar",
-  "category": "Chocolate",
-  "price": 2.99,
-  "quantity": 50,
-  "description": "Delicious milk chocolate",
-  "image": "🍫"
-}
-```
-
-## 👤 Default Users
-
-You can create users through the registration page. To create an admin user, select "Admin" from the role dropdown during registration.
-
-**Example Admin:**
-- Email: admin@sweetshop.com
-- Password: admin123
-- Role: admin
-
-**Example User:**
-- Email: user@sweetshop.com
-- Password: user123
-- Role: user
-
-## 🎨 Screenshots
-
-### Login Page
-Clean and simple authentication interface with email and password fields.
-
-### Dashboard
-- Search bar for finding sweets by name
-- Category filter dropdown
-- Grid layout displaying all sweets with images, prices, and stock levels
-- Purchase buttons (disabled when out of stock)
-- Admin controls (Add, Edit, Delete) visible only to admin users
-
-### Admin Features
-- Add Sweet Modal: Form to create new sweets with all details
-- Edit Sweet Modal: Update existing sweets and quick restock functionality
-- Delete confirmation dialogs
+### Orders & Cart
+- `GET /api/orders` - Get user orders
+- `POST /api/orders` - Create order
+- `GET /api/cart` - Get cart items
+- `POST /api/cart` - Add to cart
 
 ## 🔐 Security Features
-
-- Passwords hashed with bcrypt (12 rounds)
-- JWT tokens for stateless authentication
-- Protected routes with middleware
+- JWT Authentication
+- Password hashing with bcrypt
 - Role-based access control
-- Input validation on both client and server
-- CORS enabled for cross-origin requests
+- Input validation
+- CORS protection
 
-## 📝 My AI Usage
+## 🧪 Testing
+```bash
+# Backend tests
+cd BACKEND && npm test
 
-### Which AI tools I used
-- **Kiro AI Assistant** - Used for generating boilerplate code, debugging, and code suggestions
-- **GitHub Copilot** - Used for autocomplete and function implementations
-
-### How I used them
-- **Initial Setup**: Used Kiro to generate the initial project structure, including folder organization and basic configuration files
-- **Model Schemas**: Asked Kiro to create the User and Sweet mongoose schemas with proper validation
-- **Controller Logic**: Used Copilot to autocomplete CRUD operations in controllers
-- **Frontend Components**: Generated React component boilerplate with Kiro, then manually customized the UI/UX
-- **Authentication Flow**: Used AI to implement JWT token generation and verification logic
-- **Testing**: Asked Kiro to generate test cases for API endpoints
-- **Debugging**: When encountering errors, used Kiro to analyze error messages and suggest fixes
-- **Styling**: Used Copilot for Tailwind CSS class suggestions to speed up styling
-
-### Your reflection on how AI impacted your workflow
-AI tools significantly accelerated the development process, particularly for repetitive tasks like creating CRUD operations and boilerplate code. The AI suggestions helped me focus more on business logic and user experience rather than syntax and structure. However, I found that AI-generated code sometimes needed refinement for edge cases and specific requirements. The most valuable aspect was using AI as a pair programming partner for debugging and exploring different implementation approaches. Overall, AI reduced development time by approximately 40% while maintaining code quality through manual review and testing.
+# Frontend tests
+cd FRONTEND/frontend && npm test
+```
 
 ## 🚀 Deployment
 
-### Backend Deployment (Heroku/Railway/Render)
-1. Set environment variables on your platform
-2. Deploy the BACKEND directory
-3. Ensure MongoDB connection string is configured
+### Vercel Deployment
+1. **Backend**: Deploy BACKEND folder to Vercel
+2. **Frontend**: Deploy FRONTEND/frontend folder to Vercel
+3. **Database**: Use MongoDB Atlas for production
+4. **Environment Variables**: Set all required env vars in Vercel dashboard
 
-### Frontend Deployment (Vercel/Netlify)
-1. Build the frontend: `npm run build`
-2. Deploy the `dist` folder
-3. Update API base URL if needed
+## 📝 AI Usage Reflection
+
+### Tools Used
+- **Kiro AI Assistant** - Code generation, debugging, project structure
+- **GitHub Copilot** - Autocomplete and function implementations
+
+### Impact on Workflow
+AI tools accelerated development by ~40%, particularly for:
+- Boilerplate code generation
+- CRUD operations
+- Authentication flow implementation
+- Debugging and error resolution
+- Tailwind CSS styling
+
+The AI suggestions helped focus more on business logic and user experience rather than syntax. Manual review and testing ensured code quality while AI handled repetitive tasks.
+
+## 👨‍💻 Author
+
+**Divej Ahuja**
 
 ## 📄 License
 
 MIT
-
-## 👨‍💻 Author
-
-[Your Name]
 
 ## 🤝 Contributing
 
@@ -321,4 +215,5 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-**Note**: This project was developed as part of a TDD Kata exercise focusing on full-stack development, testing, and modern development workflows.
+*A full-stack e-commerce platform built with modern web technologies*
+
