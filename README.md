@@ -71,8 +71,7 @@
 
 **Frontend:** React 18, Vite, Tailwind CSS, React Router, Axios  
 **Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT  
-**Testing:** Jest, ESLint  
-**Deployment:** Vercel, MongoDB Atlas
+**Testing:** Jest
 
 ## 🚀 Quick Start
 
@@ -85,7 +84,7 @@
 
 1. **Clone & Install**
    ```bash
-   git clone https://github.com/yourusername/sweet-shop.git
+   git clone https://github.com/DIVEJ131203/SWEET_SHOP.git
    cd sweet-shop
    
    # Backend setup
@@ -198,7 +197,6 @@ VITE_API_URL=https://your-backend.vercel.app/api
 
 ### Tools Used
 - **Kiro AI Assistant** - Code generation, debugging, project structure
-- **GitHub Copilot** - Autocomplete and function implementations
 
 ### Impact on Workflow
 AI tools accelerated development by ~40%, particularly for:
