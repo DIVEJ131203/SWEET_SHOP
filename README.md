@@ -181,7 +181,7 @@ cd FRONTEND/frontend && npm test
 ### Impact on Workflow
 AI tools accelerated development by ~40%, particularly for:
 - **Idea Generation** - ChatGPT helped brainstorm features, user stories, and technical approaches
-- **Boilerplate code generation** - Kiro AI generated initial project structure and templates
+- **Boilerplate code generation** - OpenAI ChatGPT generated initial project structure and templates
 - **CRUD operations** - Automated creation of standard database operations
 - **Authentication flow implementation** - AI-assisted JWT and security implementation
 - **Debugging and error resolution** - Quick identification and fixing of issues
