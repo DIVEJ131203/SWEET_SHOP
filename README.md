@@ -171,27 +171,6 @@ cd BACKEND && npm test
 cd FRONTEND/frontend && npm test
 ```
 
-## 🚀 Deployment
-
-### Vercel Deployment
-1. **Backend**: Deploy BACKEND folder to Vercel
-2. **Frontend**: Deploy FRONTEND/frontend folder to Vercel
-3. **Database**: Use MongoDB Atlas for production
-4. **Environment Variables**: Set all required env vars in Vercel dashboard
-
-### Environment Variables for Production
-**Backend:**
-```env
-NODE_ENV=production
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/sweetshop
-JWT_SECRET=your-production-jwt-secret
-FRONTEND_URL=https://your-frontend.vercel.app
-```
-
-**Frontend:**
-```env
-VITE_API_URL=https://your-backend.vercel.app/api
-```
 
 ## 📝 AI Usage Reflection
 
