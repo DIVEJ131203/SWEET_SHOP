@@ -175,8 +175,7 @@ cd FRONTEND/frontend && npm test
 ## 📝 AI Usage Reflection
 
 ### Tools Used
-- **ChatGPT** - Idea generation, feature planning, and architecture decisions
-- **Kiro AI Assistant** - Code generation, debugging, project structure
+- **ChatGPT** - Idea generation, feature planning, and architecture decisions - Code generation, debugging, project structure
 
 
 ### Impact on Workflow
