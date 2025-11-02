@@ -175,17 +175,20 @@ cd FRONTEND/frontend && npm test
 ## 📝 AI Usage Reflection
 
 ### Tools Used
+- **ChatGPT** - Idea generation, feature planning, and architecture decisions
 - **Kiro AI Assistant** - Code generation, debugging, project structure
+- **GitHub Copilot** - Autocomplete and function implementations
 
 ### Impact on Workflow
 AI tools accelerated development by ~40%, particularly for:
-- Boilerplate code generation
-- CRUD operations
-- Authentication flow implementation
-- Debugging and error resolution
-- Tailwind CSS styling
+- **Idea Generation** - ChatGPT helped brainstorm features, user stories, and technical approaches
+- **Boilerplate code generation** - Kiro AI generated initial project structure and templates
+- **CRUD operations** - Automated creation of standard database operations
+- **Authentication flow implementation** - AI-assisted JWT and security implementation
+- **Debugging and error resolution** - Quick identification and fixing of issues
+- **Tailwind CSS styling** - Copilot suggestions for responsive design classes
 
-The AI suggestions helped focus more on business logic and user experience rather than syntax. Manual review and testing ensured code quality while AI handled repetitive tasks.
+The AI suggestions helped focus more on business logic and user experience rather than syntax. ChatGPT was particularly valuable for conceptualizing the e-commerce workflow and feature requirements. Manual review and testing ensured code quality while AI handled repetitive tasks.
 
 ## 👨‍💻 Author
 
