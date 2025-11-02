@@ -1,0 +1,29 @@
+{
+  "name": "sweetshop-management",
+  "version": "1.0.0",
+  "description": "Full-stack MERN Sweet Shop Management System",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd BACKEND && npm install && cd ../FRONTEND/frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd BACKEND && npm run dev",
+    "dev:frontend": "cd FRONTEND/frontend && npm run dev",
+    "start:backend": "cd BACKEND && npm start",
+    "build:frontend": "cd FRONTEND/frontend && npm run build",
+    "test": "cd BACKEND && npm test"
+  },
+  "keywords": [
+    "mern",
+    "sweetshop",
+    "inventory",
+    "management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "react-hot-toast": "^2.6.0"
+  }
+}
