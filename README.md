@@ -17,21 +17,37 @@
 
 ## 📸 Application Screenshots
 
+### 🔐 Login Page
+![Login Page](./screenshots/LoginPage.png)
+*Secure user authentication with clean and intuitive login interface*
+
 ### 🏠 Homepage & Product Catalog
 ![Homepage](./screenshots/homepage.png)
 *Browse through our extensive collection of sweets with search and filter options*
 
-### 🛒 Shopping Cart & Checkout
+### 🍬 Product Details Page
+![Product Page](./screenshots/productPage.png)
+*Detailed product view with descriptions, pricing, and add to cart functionality*
+
+### � Shopp ing Cart & Checkout
 ![Shopping Cart](./screenshots/cart.png)
 *Seamless shopping experience with real-time cart updates and secure checkout*
+
+### 🔔 Notifications System
+![Notifications](./screenshots/notifications.png)
+*Real-time notifications for order updates, low stock alerts, and system messages*
+
+### 📋 Customer Order Details
+![User Order](./screenshots/User_order.png)
+*Comprehensive order tracking and details for customers with status updates*
 
 ### 👨‍💼 Admin Dashboard
 ![Admin Dashboard](./screenshots/admin-dashboard.png)
 *Comprehensive admin panel for managing products, orders, and analytics*
 
-### 📊 Order Management
+### 📊 Order Management (Admin)
 ![Order Management](./screenshots/order-management.png)
-*Track and manage orders with real-time status updates and delivery tracking*
+*Admin order management with real-time status updates and delivery tracking*
 
 ## 🌟 Key Features
 
