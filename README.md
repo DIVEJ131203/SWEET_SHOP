@@ -1,4 +1,4 @@
-# 🍬 Sweet Shop - E-commerce Platform
+# 🍬 Sweet Shop - Complete E-commerce Platform
 
 <div align="center">
 
@@ -8,308 +8,148 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-7.0-47A248?style=flat&logo=mongodb&logoColor=white)](https://mongodb.com/)
 [![Express.js](https://img.shields.io/badge/Express.js-4.18-000000?style=flat&logo=express&logoColor=white)](https://expressjs.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.3-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-**A modern full-stack e-commerce platform for sweet shops with real-time notifications, order tracking, and admin dashb
+**A modern, full-stack e-commerce platform for sweet shops with advanced features like real-time notifications, order tracking, coupon management, and comprehensive admin dashboard.**
 
-**Developed b Divevej Ahuja*
 [🚀 Live Demo](#) • [📖 Documentation](#) • [🐛 Report Bug](#) • [💡 Request Feature](#)
->iv>
 
-#icatotscation Sc
-
-### 🏠 Homepage & Product Catalog
-![Homepage](./screenshots/homepage.png)
-*Browse through our extensive collectio swe sweets wiosearch ander optio
-
-### 🛒Tehopping Ca(# & ech-kout
-![Sh️ ArchiCart](.](#reenshots/cart.png)
-*Seamless shopping experience with real-time cart updates*
-
-### 👨‍💼 Admin Dashboard
-![Admin Dashuoardatioscreenpi-docudmin-dashboard.png)
-*Comprehensive admin panel for managing products, orders, and analytics*
-
-### �  Mobile ResponsiontDesutn
-![Mobile View](./screenshots/mobile-view.png)
-*Fully resp desie design ectln as*perfecll 
-
-# Mander Ma
-![Order Management](./screenshots/order-management.png)
-*Track and manage orders with real-time status updates*
-
-## 🌟 Key Features
-
-### 🛍️ For Custom - 
-- **User Authentication** - Secure login/regichas system
-- **ResductiCatalog** - Browse sweets with search and filters
-- **Shopping Cart** - Real-time cart with price calculation
-- **Or‍💼 ArackiFg** - Track delivery status in real-time
-- **Reviews & Ratings** - Rate and review products
-- **Responsive Design** - Works on all devices
-
-### 👨‍💼 For Admins
-- **DashboaSysAnalytics** - Sales overview anunmetrics
-- **Inventock Aanagement** - Add, edit, delete products
-- **Order Management** - Process and track orders
-- **Coupon System** - Create discount codes
-- **Low Stock Alerts** - Automated inventory notifications
-- **User Management** - Manage customer accounts
-
-## 🛠️ Tech Stack
-
-**Frontend:** React 18, Vite, Tailwind CSS, React Router, Axios  
-**Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT  
-**Testing:** Jest, ESLint  
-**Deployment:** Vercel, MongoDB Atlas
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js (v18+)
-- MongoDB (local or Atlas)
-- Git
-
-### Installation
-
-1. **Clone & Install**
-   ```bash
-   git httne https://github.com/yourusername/swe
-   cd sweet-shop
-   
-   # Backend setup
-   cd BACKEND && npm install
-   
-   # Frontend setup
-   cd ../FRONTEND/frontend && npm install
-   ```
-
-2. **Environment Setup**
-   
-   **Backend `.env`:**
-   ```env
-   MONGODB_URI=monpose://lot:27017:27017/sweetshop
-   JWT_SECRET=your_secret_key_here
-| **JeNTEND_URL=http://localhk |
-   ```
-   
-   **Fronten* | Cnv`:**
-  **Autoprefixer** | CSS Vendor Prefixes |
-  VITE_API_URL=http://localhost:5000
-## ```
-
-3. **Run Application**
-   ```bash
-   # Terminal 1 - Backend
-   cd BACKEND && npm run dev
-   
-   # Terminal 2 - Frontend  
-   cd FRONTEND/frontend && npm run dev
-   ```
-
-4. **Seed Database**
-   ```bash
-   cd BACKEND && npm run seed
-   ```
-
-### 🌐 Access
-- **Frontend**: http://localhost:5173
-- **Backend API**: http://localhost:5000/api
-
-### 👤 Test Credentials
-- **Admin**: admin@sweetshop.com / admin123
-- **User**: user@sweetshop.com / user123
-
-## 📡 API Endpoints
-
-### Authentication
-- `POST /api/auth/register` - Register user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/me` - Get current user
-
-### Products
-- `GET /api/sweets` - Get all products
-- `POST /api/sweets` - Create product (Admin)
-- `PUT /api/sweets/:id` - Update product (Admin)
-- `DELETE /api/sweets/:id` - Delete product (Admin)
-
-### Orders & Cart
-- `GET /api/orders` - Get user orders
-- `POST /api/orders` - Create order
-- `GET /api/cart` - Get cart items
-- `POST /api/cart` - Add to cart
-
-## 🔐 Security Features
-- JWT Authentication
-- Password hashing with bcrypt
-- Role-based access control
-- Input validation
-- CORS protection
-
-## 🧪 Testing
-```bash
-# Backend tests
-cd BACKEND && npm test
-
-# Frontend tests
-cd FRONTEND/frontend && npm test
-```
-
-## 🚀 Deployment
-
-### Vercel Deployment
-1. **Backend**: Deploy BACKEND folder to Vercel
-2. **Frontend**: Deploy FRONTEND/frontend folder to Vercel
-3. **Database**: Use MongoDB Atlas for production
-4. **Environment Variables**: Set all required env vars in Vercel dashboard
-
-## 📝 AI Usage Reflection
-
-### Tools Used
-- **Kiro AI Assistant** - Code generation, debugging, project structure
-- **GitHub Copilot** - Autocomplete and function implementations
-
-### Impact on Workflow
-AI tools accelerated development by ~40%, particularly for:
-- Boilerplate code generation
-- CRUD operations
-- Authentication flow implementation
-- Debugging and error resolution
-- Tailwind CSS styling
-
-The AI suggestions helped focus more on business logic and user experience rather than syntax. Manual review and testing ensured code quality while AI handled repetitive tasks.
-
-## 👨‍💻 Author
-
-**Divej Ahuja**
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
+</div>
 
 ---
 
-*A full-stack e-commerce platform built with modern web technologies*
-- **Node.js**her) - [Dooad herettps://ejs.orgMongoDB**tallation or Atlas account) - [Get started](https://www.mongodb.com/)
-- **Git** - [Download here](https://git-sc*npm** or **yarn** package manager
+## 📋 Table of Contents
 
-### 🔧 Installation
+- [🌟 Features](#-features)
+- [�️ Tecph Stack](#️-tech-stack)
+- [🏗️ Architecture](#️-architecture)
+- [📁 Project Structure](#-project-structure)
+- [🚀 Quick Start](#-quick-start)
+- [⚙️ Configuration](#️-configuration)
+- [📡 API Documentation](#-api-documentation)
+- [🧪 Testing](#-testing)
+- [🚀 Deployment](#-deployment)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://githum/yo/sweop.git
-  sweet
-   `
+## 🌟 Features
 
-kend S
-   ```bashcd BACKEND
-   npm install
-   ```
+### 🛍️ Customer Features
+- **User Authentication** - Secure registration and login system
+- **Product Catalog** - Browse extensive sweet collection with search and filters
+- **Shopping Cart** - Add/remove items with real-time price calculation
+- **Order Management** - Place orders and track delivery status
+- **User Profile** - Manage personal information and order history
+- **Reviews & Ratings** - Rate and review purchased products
+- **Responsive Design** - Seamless experience across all devices
 
-3. **Frontend Setup**
-   ```bash
-   cd ../FRONTEND/frontend
-   npm in``# ⚙️ment Configuration
+### 👨‍💼 Admin Features
+- **Dashboard Analytics** - Sales overview, revenue tracking, and key metrics
+- **Inventory Management** - Add, edit, delete products with stock tracking
+- **Order Management** - Process orders, update status, and manage deliveries
+- **User Management** - View and manage customer accounts
+- **Coupon System** - Create and manage discount codes
+- **Low Stock Alerts** - Automated notifications for inventory management
+- **Sales Reports** - Detailed analytics and reporting tools
 
-1.end Environriables**eate a `.e in the `BA direct``e
-   ConfigurationORT=5000
-  =development
-   
-base  MONGODB_URI=mo/localhost:27017/sweetshop
-   # For MongoDB Atlas: mongodb+srv://username:password@cluster.mongodb.net/sweetshop
-   
-   # Authentication
-   JWT_SECRET=your_super_secret_jwt_key_change_this_in_production_minimum_32_characters
-   
-   # Frontend URL (f CORS)
-   RL=http::5173
- . *end Ent Varles**
-    Create v` file inND/frontend`
+### 🔧 Technical Features
+- **Real-time Notifications** - Push notifications for order updates
+- **JWT Authentication** - Secure token-based authentication
+- **Role-based Access Control** - Different permissions for users and admins
+- **RESTful API** - Well-structured API endpoints
+- **Data Validation** - Comprehensive input validation
+- **Error Handling** - Graceful error management
+- **Responsive UI** - Mobile-first design approach
+- **SEO Optimized** - Search engine friendly structure
 
-   # APConfigur VITAPI_URL=ocalhos
-   ```
+## �️ Teceh Stack
 
-### 🚀 Running the Application
+### Frontend
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **React** | 18.2.0 | UI Library |
+| **Vite** | 4.4.5 | Build Tool & Dev Server |
+| **React Router** | 6.15.0 | Client-side Routing |
+| **Axios** | 1.5.0 | HTTP Client |
+| **Tailwind CSS** | 3.3.3 | Styling Framework |
+| **React Hot Toast** | 2.4.1 | Notifications |
 
-#### Option 1: Run Both Servers Separately
+### Backend
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Node.js** | 18+ | Runtime Environment |
+| **Express.js** | 4.18.2 | Web Framework |
+| **MongoDB** | 7.5.0 | Database |
+| **Mongoose** | 7.5.0 | ODM |
+| **JWT** | 9.0.2 | Authentication |
+| **bcryptjs** | 2.4.3 | Password Hashing |
+| **Multer** | 1.4.5 | File Upload |
+| **Validator** | 13.11.0 | Data Validation |
 
-**Terminal 1 - Backend:**
-```bash
-cd BACKEND
-npm run dev
-```
+### Development & Testing
+| Technology | Purpose |
+|------------|---------|
+| **Jest** | Testing Framework |
+| **ESLint** | Code Linting |
+| **Nodemon** | Development Server |
+| **PostCSS** | CSS Processing |
+| **Autoprefixer** | CSS Vendor Prefixes |
 
-**Terminal 2 - Frontend:**
-```bash
-cd FRONTEND/frontend
-npm run dev
-```
+## 🏗️ Architecture
 
-#### Option 2: Quick Start ipt (Reco```From the root directoryn d:al
-### 🌱 Datase Seeding
+```mermaid
+graph TB
+    subgraph "Frontend (React + Vite)"
+        A[User Interface]
+        B[React Router]
+        C[Context API]
+        D[Axios HTTP Client]
+    end
+    
+    subgraph "Backend (Node.js + Express)"
+        E[Express Server]
+        F[Authentication Middleware]
+        G[API Routes]
+        H[Controllers]
+    end
+    
+    subgraph "Database"
+        I[MongoDB]
+        J[User Collection]
+        K[Sweet Collection]
+        L[Order Collection]
+        M[Review Collection]
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    I --> K
+    I --> L
+    I --> M
+```scription | Auth Required | Admin Only |
+|--------|----------|-------------|---------------|------------|
+| `GET` | `/notifications` | Get user notifications | Yes | No |
+| `POST` | `/notifications` | Create notification | Yes | Yes |
+| `PUT` | `/notifications/:id/read` | Mark as read | Yes | No |
+| `DELETE` | `/notifications/:id` | Delete notification | Yes | No |
 
-Seed the database with sample data:
-`bash
-cd BACKEND
-npm run seed
-```
+### Request/Response Examples
 
-This will create:
-- Sample sweet products
-- Admin user (admin@sweetshop.com / admin123)
-- Regular user (user@sweetshop.com / user123)
-- Sample orders and reviews
-ion
+<details>
+<summary><strong>Authentication Examples</strong></summary>
 
-- *
-### 🌐 Access the Applicat*Fron: http://loc3
-- ckend API//localhost
-- *ealth Check**: http://loca00/api/health
+**Register User:**
+```json
+POST /api/auth/register
+Content-Type: application/json
 
-### 👤 Default Login Credentials
-
-**Admin Account:**
-- Email: `admin@sweetshop.com`
-- Password: `admin123`
-
-**User Account:**
-- Email: `user@sweehop.com`
-- Password: `23`onfiguraBackend Configuration
-
-| Variable | Description | Default | Required |
-|----------|-------------|----|----------|
-| `PORT` | Server port | 5000 | No |
-| `NODE_ENV` | Environment | developme| No |
-| `MONGODB_URI` | Database connection string | - | Yes |
-| `JWT_SECRET` | JWT signing secret | - | Yes |
-| `FRONTEND_URL` | Frontend URL for CORS | - | Yes |
-
-### Frontend Configuration
-
-| Variable | Descripti| Default quired |
-|--------|---------|----------|_URL` | Backend API URL | - |
-
-## ng
-
-### Running Tests
-
-**Backend Tests:**
-```bash
-cd BACKEND
-npm test                    # Run all tests
-npm run test:watch         # Run tests in watch moun test:co      # Run testh cove
-```
-
-*Tests:**
-`
-cd FRONTENDtend
-npm test                    # Run component tests
-npm runest:e2e   # Run end-to-end tests
-est Cge
-
-The prdes comprehensive test age for:
-
-- ✅ **API Endpoints** - All CRUD operations
-- ✅ **Autheion** - Login, reation, JWT validatiohorization** - Role-based access control
-- ✅ **Data Va* - t lidation and sanitization
-- ✅ **Error Handling** - Graceful error responses
-- ✅ **Database Operations** - Model validations and queries
+{
+  "name": "John Doe",
+  "email": "john@examp
