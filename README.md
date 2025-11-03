@@ -29,7 +29,7 @@
 ![Product Page](./screenshots/productPage.png)
 *Detailed product view with descriptions, pricing, and add to cart functionality*
 
-### � Shopp ing Cart & Checkout
+### � Shopping Cart & Checkout
 ![Shopping Cart](./screenshots/cart.png)
 *Seamless shopping experience with real-time cart updates and secure checkout*
 
